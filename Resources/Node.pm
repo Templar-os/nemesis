@@ -2,7 +2,7 @@ package Resources::Node;
 
 use Net::IP;
 use Moose::Util::TypeConstraints;
-use Moose;
+use Moo;
 use KiokuDB::Util qw(set);
 
 subtype 'port', as 'Int', where { $_ > 0 and $_ < 65000 }, message {"Ehmm"};

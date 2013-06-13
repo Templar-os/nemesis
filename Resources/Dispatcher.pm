@@ -1,6 +1,6 @@
 
 package Resources::Dispatcher;
-use Moose;
+use Moo;
 use Nemesis::Inject;
 
 nemesis_resource;

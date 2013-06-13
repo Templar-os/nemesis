@@ -1,6 +1,6 @@
 package Resources::DB;
 
-use Moose;
+use Moo;
 use Nemesis::Inject;
 use KiokuDB;
 use Search::GIN::Extract::Class;

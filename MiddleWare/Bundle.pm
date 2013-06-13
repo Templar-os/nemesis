@@ -1,6 +1,6 @@
-package Plugin::Bundle;
+package MiddleWare::Bundle;
 
-use Moose;
+use Moo;
 
 use PAR::Packer ();
 use PAR         ();

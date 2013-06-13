@@ -1,6 +1,6 @@
 package MiddleWare::Database;
 
-use Moose;
+use Moo;
 use Nemesis::Inject;
 use Fcntl qw(:DEFAULT :flock);
 ############################################
@@ -30,6 +30,17 @@ $SIG{'TERM'} = sub {
     $Init->io->debug( "Signal term arrived", __PACKAGE__ );
     threads->exit;
 };
+
+
+sub txn_do(){
+  my $self=shift;
+  my $code=shift;
+
+  open my $DB
+
+
+}
+
 
 sub prepare() {
     my $self       = shift;
