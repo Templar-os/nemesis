@@ -1,6 +1,5 @@
 package MiddleWare::Database;
-
-use Moo;
+use Class::Accessor "antlers";
 use Nemesis::Inject;
 use Fcntl qw(:DEFAULT :flock);
 ############################################
@@ -36,7 +35,7 @@ sub txn_do(){
   my $self=shift;
   my $code=shift;
 
-  open my $DB
+  open my $DB;
 
 
 }
@@ -46,7 +45,7 @@ sub prepare() {
     my $self       = shift;
     my $Dispatcher = $Init->ml->loadmodule("Dispatcher");
     $self->Dispatcher($Dispatcher);
-    my $DB = $self->Init->ml->loadmodule("DB");
+    my $DB = $Init->ml->loadmodule("DB");
     $DB->connect();
     $self->DB($DB);
     $self->start();

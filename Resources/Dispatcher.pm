@@ -1,6 +1,5 @@
-
 package Resources::Dispatcher;
-use Moo;
+use Class::Accessor "antlers";
 use Nemesis::Inject;
 
 nemesis_resource;

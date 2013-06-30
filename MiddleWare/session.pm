@@ -2,7 +2,7 @@ package MiddleWare::session;
 use warnings;
 use Carp qw( croak );
 use Nemesis::Inject;
-use Data::Dumper;
+#use Data::Dumper;
 my $VERSION = '0.1a';
 my $AUTHOR  = "mudler";
 my $MODULE  = __PACKAGE__;

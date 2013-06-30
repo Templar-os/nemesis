@@ -1,11 +1,11 @@
 package Resources::Node;
 
-use Net::IP;
-use Moose::Util::TypeConstraints;
-use Moo;
-use KiokuDB::Util qw(set);
+#use Net::IP;
+#use Moose::Util::TypeConstraints;
+use Class::Accessor "antlers";
+#use KiokuDB::Util qw(set);
 
-subtype 'port', as 'Int', where { $_ > 0 and $_ < 65000 }, message {"Ehmm"};
+#subtype 'port', as 'Int', where { $_ > 0 and $_ < 65000 }, message {"Ehmm"};
 
 has 'ip'        => ( is => 'rw' );
 has 'ports'     => ( is => 'rw', isa => "ArrayRef", default => sub { [] } );

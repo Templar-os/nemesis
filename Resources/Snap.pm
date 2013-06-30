@@ -1,5 +1,5 @@
 package Resources::Snap;
-use Moose;
+use Class::Accessor "antlers";
 
 use DateTime;
 

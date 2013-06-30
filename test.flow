@@ -1,0 +1,4 @@
+shell@clear@
+shell@run@ls#-liah
+Bundle@test
+Bundle@exportCli@/home/mudler/PAR-minimal.pl

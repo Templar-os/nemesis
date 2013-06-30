@@ -1,11 +1,11 @@
 package Resources::DB;
 
-use Moo;
+use Class::Accessor "antlers";
 use Nemesis::Inject;
-use KiokuDB;
-use Search::GIN::Extract::Class;
-use Search::GIN::Query::Manual;
-use Search::GIN::Query::Class;
+#use KiokuDB;
+#use Search::GIN::Extract::Class;
+#use Search::GIN::Query::Manual;
+#use Search::GIN::Query::Class;
 use Fcntl qw(:DEFAULT :flock);
 use Resources::Snap;
 nemesis_resource;
